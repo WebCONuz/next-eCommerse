@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- page title -->
+    <title>Next</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/output.css" />
+    <!-- box-icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="bg-[#ECF4FF]">
+    <!-- Header Section -->
+    <header class="w-full shadow-md bg-white">
+      <div class="top-nav flex justify-end items-center pr-[4%] py-[6px]">
+        <a href="#" class="text-[#1E1E1E] block mr-[200px]"
+          ><i class="bx bxs-envelope"></i> Aloqa uchun</a
+        >
+        <select name="lang" id="lang">
+          <option value="UZ" selected>UZ</option>
+          <option value="EN">EN</option>
+          <option value="RU">RU</option>
+        </select>
+      </div>
+      <div class="bottom-nav">
+        <div class="container">
+          <div class="flex justify-between items-center py-2">
+            <img src="./images/Logo.svg" alt="logo" />
+            <button
+              class="text-white bg-gradient-to-r from-[#F14E52] to-[#535DF0] py-[10px] px-6 rounded-lg flex items-center"
+            >
+              <i class="bx bx-menu text-2xl mr-2"></i>
+              <span class="uppercase">katalog</span>
+            </button>
+            <div class="search flex">
+              <input
+                type="text"
+                class="border border-gray-200 rounded-l-lg py-2 px-3 w-[400px] focus:outline-none"
+              />
+              <button
+                class="py-2 px-5 bg-[#0D63F3] text-white text-2xl rounded-r-lg"
+              >
+                <i class="bx bx-search"></i>
+              </button>
+            </div>
+            <button
+              class="w-[46px] h-[46px] flex items-center justify-center bg-[#ECF4FF] rounded-lg"
+            >
+              <img src="./images/heart.svg" alt="like" />
+            </button>
+            <button
+              class="w-[46px] h-[46px] flex items-center justify-center bg-[#ECF4FF] rounded-lg"
+            >
+              <img src="./images/cart.svg" alt="cart" />
+            </button>
+            <button
+              class="text-[#1E1E1E] bg-gradient-to-r from-[#FDDBDC] to-[#DCDEFC] py-3 px-8 rounded-lg flex items-center"
+            >
+              <span class="capitalize">kirish</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <!-- Intro section -->
+      <section id="intro" class="intro pt-10 pb-14">
+        <div class="container relative">
+          <div
+            class="arrow-left absolute top-1/2 left-8 -translate-y-1/2 w-[42px] h-[42px] rounded-full bg-gradient-to-r from-[#FDDBDC] to-[#DCDEFC] flex items-center justify-center"
+          >
+            <i class="bx bx-chevron-left text-2xl"></i>
+          </div>
+          <img
+            src="./images/intro.jpg"
+            alt="intro"
+            class="w-full rounded-2xl"
+          />
+          <div
+            class="arrow-left absolute top-1/2 right-8 -translate-y-1/2 w-[42px] h-[42px] rounded-full bg-gradient-to-r from-[#FDDBDC] to-[#DCDEFC] flex items-center justify-center"
+          >
+            <i class="bx bx-chevron-right text-2xl"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- Category section -->
+      <section id="category" class="category pb-10">
+        <div class="container">
+          <h2 class="text-3xl mb-5">Kategoriyalar</h2>
+          <div class="flex justify-between mb-5">
+            <div class="card bg-white px-2 pt-3 pb-4 w-[150px] rounded-lg">
+              <img src="./images/phone.jpg" alt="phone" />
+              <p class="overflow-hidden h-[45px] text-center">Smartfonlar</p>
+            </div>
+            <div class="card bg-white px-2 pt-3 pb-4 w-[150px] rounded-lg">
+              <img src="./images/pc.jpg" alt="phone" />
+              <p class="overflow-hidden h-[45px] text-center">
+                Kompyuterlar va notebooklar
+              </p>
+            </div>
+            <div class="card bg-white px-2 pt-3 pb-4 w-[150px] rounded-lg">
+              <img src="./images/tv.jpg" alt="phone" />
+              <p class="overflow-hidden h-[45px] text-center">Televizorlar</p>
+            </div>
+            <div class="card bg-white px-2 pt-3 pb-4 w-[150px] rounded-lg">
+              <img src="./images/watch.png" alt="phone" />
+              <p class="overflow-hidden h-[45px] text-center">Aqilli soatlar</p>
+            </div>
+            <div class="card bg-white px-2 pt-3 pb-4 w-[150px] rounded-lg">
+              <img src="./images/ears-phone.jpg" alt="phone" />
+              <p class="overflow-hidden h-[45px] text-center">Quloqchinlar</p>
+            </div>
+            <div class="card bg-white px-2 pt-3 pb-4 w-[150px] rounded-lg">
+              <img src="./images/conde.jpg" alt="phone" />
+              <p class="overflow-hidden h-[45px] text-center">
+                Konditsionerlar
+              </p>
+            </div>
+            <div class="card bg-white px-2 pt-3 pb-4 w-[150px] rounded-lg">
+              <img src="./images/freeze.jpg" alt="phone" />
+              <p class="overflow-hidden h-[45px] text-center">Sovutgichlar</p>
+            </div>
+            <div class="card bg-white px-2 pt-3 pb-4 w-[135px] rounded-lg">
+              <img src="./images/washcar.jpg" alt="phone" />
+              <p class="overflow-hidden h-[45px] text-center">
+                Kir yuvish mashinalari
+              </p>
+            </div>
+          </div>
+          <button class="text-[#1E1E1E] py-[14px] bg-white rounded-lg w-full">
+            Batafsil
+          </button>
+        </div>
+      </section>
+
+      <!-- Top Seller Products -->
+      <section id="mostSeller" class="mostSeller pb-10">
+        <div class="container">
+          <h2 class="text-3xl mb-5">Eng ko'p sotilgan</h2>
+          <div class="flex justify-between flex-wrap mb-5">
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/pc.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                299 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Apple Airpods Pro, simsiz quloqchin, oq rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/pc.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                299 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Apple Airpods Pro, simsiz quloqchin, oq rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/pc.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                299 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Apple Airpods Pro, simsiz quloqchin, oq rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/pc.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                299 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Apple Airpods Pro, simsiz quloqchin, oq rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/pc.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                299 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Apple Airpods Pro, simsiz quloqchin, oq rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/pc.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                299 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Apple Airpods Pro, simsiz quloqchin, oq rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/pc.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                299 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Apple Airpods Pro, simsiz quloqchin, oq rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/pc.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                299 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Apple Airpods Pro, simsiz quloqchin, oq rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/pc.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                299 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Apple Airpods Pro, simsiz quloqchin, oq rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/pc.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                299 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Apple Airpods Pro, simsiz quloqchin, oq rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+          </div>
+          <button class="text-[#1E1E1E] py-[14px] bg-white rounded-lg w-full">
+            Ko'proq ko'rish
+          </button>
+        </div>
+      </section>
+
+      <!-- Reclama section -->
+      <section id="rec" class="rec pt-10 pb-14">
+        <div class="container relative">
+          <div
+            class="arrow-left absolute top-1/2 left-8 -translate-y-1/2 w-[42px] h-[42px] rounded-full bg-gradient-to-r from-[#FDDBDC] to-[#DCDEFC] flex items-center justify-center"
+          >
+            <i class="bx bx-chevron-left text-2xl"></i>
+          </div>
+          <img
+            src="./images/reclama.jpg"
+            alt="rec"
+            class="w-full rounded-2xl"
+          />
+          <div
+            class="arrow-left absolute top-1/2 right-8 -translate-y-1/2 w-[42px] h-[42px] rounded-full bg-gradient-to-r from-[#FDDBDC] to-[#DCDEFC] flex items-center justify-center"
+          >
+            <i class="bx bx-chevron-right text-2xl"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- Famous Products -->
+      <section id="famous" class="famous pb-10">
+        <div class="container">
+          <h2 class="text-3xl mb-5">Eng ommabop</h2>
+          <div class="flex justify-between flex-wrap mb-5">
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/tv.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                1 250 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Samsun Smart Tv, Aqilli televizor, qora rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/tv.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                1 250 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Samsun Smart Tv, Aqilli televizor, qora rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/tv.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                1 250 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Samsun Smart Tv, Aqilli televizor, qora rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/tv.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                1 250 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Samsun Smart Tv, Aqilli televizor, qora rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/tv.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                1 250 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Samsun Smart Tv, Aqilli televizor, qora rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/tv.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                1 250 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Samsun Smart Tv, Aqilli televizor, qora rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/tv.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                1 250 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Samsun Smart Tv, Aqilli televizor, qora rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/tv.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                1 250 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Samsun Smart Tv, Aqilli televizor, qora rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/tv.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                1 250 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Samsun Smart Tv, Aqilli televizor, qora rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+            <div
+              class="card pt-2 pb-6 px-5 bg-white relative w-[250px] mb-5 rounded-lg"
+            >
+              <img src="./images/tv.jpg" alt="product" class="w-full" />
+              <h3 class="price text-lg text-[#0D63F3] mb-[6px]">
+                1 250 000 so'm
+              </h3>
+              <p class="overflow-hidden h-[78px] mb-4">
+                Samsun Smart Tv, Aqilli televizor, qora rangda
+              </p>
+              <p class="mount mb-6 opacity-75">1230 ta buyurtma</p>
+              <div class="flex items-center justify-between">
+                <button class="py-2 px-4 bg-[#0D63F3] text-white rounded-lg">
+                  Sotib olish
+                </button>
+                <img src="./images/cart.svg" alt="card" />
+              </div>
+            </div>
+          </div>
+          <button class="text-[#1E1E1E] py-[14px] bg-white rounded-lg w-full">
+            Ko'proq ko'rish
+          </button>
+        </div>
+      </section>
+
+      <!-- Brands section -->
+      <section id="brands" class="brands pb-10">
+        <div class="container">
+          <h2 class="text-3xl mb-5">Brendlar bo'yicha</h2>
+          <div class="flex justify-between flex-wrap mb-5">
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/brand/hp.png" alt="hp" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/brand/acer.png" alt="hp" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/brand/asus.png" alt="hp" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/brand/samsung.png" alt="hp" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/brand/apple.png" alt="hp" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/brand/msi.png" alt="hp" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/brand/mi.png" alt="hp" class="w-[180px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/brand/vivo.png" alt="hp" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/brand/hp.png" alt="hp" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/brand/acer.png" alt="hp" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/brand/asus.png" alt="hp" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/brand/samsung.png" alt="hp" class="w-[90px]" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reclama section -->
+      <section id="rec" class="rec pb-14">
+        <div class="container relative">
+          <div
+            class="arrow-left absolute top-1/2 left-8 -translate-y-1/2 w-[42px] h-[42px] rounded-full bg-gradient-to-r from-[#FDDBDC] to-[#DCDEFC] flex items-center justify-center"
+          >
+            <i class="bx bx-chevron-left text-2xl"></i>
+          </div>
+          <img
+            src="./images/reclama.jpg"
+            alt="rec"
+            class="w-full rounded-2xl"
+          />
+          <div
+            class="arrow-left absolute top-1/2 right-8 -translate-y-1/2 w-[42px] h-[42px] rounded-full bg-gradient-to-r from-[#FDDBDC] to-[#DCDEFC] flex items-center justify-center"
+          >
+            <i class="bx bx-chevron-right text-2xl"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shops section -->
+      <section id="shops" class="shops pb-10">
+        <div class="container">
+          <h2 class="text-3xl mb-5">Do'konlarimiz</h2>
+          <div class="flex justify-between flex-wrap mb-5">
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/shops/shop1.png" alt="shop" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/shops/shop2.png" alt="shop" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/shops/shop3.png" alt="shop" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/shops/shop4.png" alt="shop" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/shops/shop5.png" alt="shop" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/shops/shop1.png" alt="shop" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/shops/shop2.png" alt="shop" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/shops/shop3.png" alt="shop" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/shops/shop4.png" alt="shop" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/shops/shop5.png" alt="shop" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/shops/shop4" alt="shop" class="w-[90px]" />
+            </div>
+            <div
+              class="card bg-white flex justify-center py-2 w-[205px] mb-5 rounded-lg"
+            >
+              <img src="./images/shops/shop5.png" alt="shop" class="w-[90px]" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer
+      id="footer"
+      class="footer bg-gradient-to-r from-[#EED2DB] to-[#CCD6FD]"
+    >
+      <div class="container pt-10">
+        <div class="foot-top flex justify-between pb-4">
+          <div class="w-1/2 flex justify-between">
+            <div class="flex flex-col">
+              <h3 class="mb-5 font-semibold">Hujjatlar</h3>
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5"
+                >Umumiy shartlar</a
+              >
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5"
+                >Ofertalar arxivi</a
+              >
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5">Nizom</a>
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5">Guvohnoma</a>
+            </div>
+            <div class="flex flex-col">
+              <h3 class="mb-5 font-semibold">Service</h3>
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5">Do’konlar</a>
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5"
+                >Biz haqimizda</a
+              >
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5"
+                >Hamkorlik uchun</a
+              >
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5">Qaytarish</a>
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5">Promokodlar</a>
+            </div>
+            <div class="flex flex-col">
+              <h3 class="mb-5 font-semibold">Mahsulotlar katalogi</h3>
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5">Katalog1</a>
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5">Katalog2</a>
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5">Katalog3</a>
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5">Katalog4</a>
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5">Katalog5</a>
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5">Katalog6</a>
+            </div>
+          </div>
+          <div class="w-1/3">
+            <div class="flex flex-col">
+              <h3 class="mb-5 font-semibold">Axbarot xizmati</h3>
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5"
+                >contact.@nextstore.uz</a
+              >
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5"
+                >+998 97 712 96 96 <br />
+                +998 95 503 09 09</a
+              >
+              <a href="#" class="text-[#1E1E1E] opacity-90 mb-5"
+                >Sag’bon 186, Olmazor tumani, Toshkent,<br />
+                O'zbekiston</a
+              >
+              <div class="flex">
+                <a href="#" class="mr-4 text-3xl"
+                  ><i class="bx bxl-facebook-circle text-[#1877F2]"></i
+                ></a>
+                <a href="#" class="mr-4 text-3xl"
+                  ><i class="bx bxl-instagram text-[#763985]"></i
+                ></a>
+                <a href="#" class="mr-4 text-3xl"
+                  ><i class="bx bxl-telegram text-[#27A6E6]"></i
+                ></a>
+                <a href="#" class="mr-4 text-3xl"
+                  ><i class="bx bxl-tiktok text-[#1E1E1E]"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="foot-bottom border-t-2 border-gray-400 py-7 flex justify-between items-center"
+        >
+          <p class="opacity-80">2022 Nextstore.com</p>
+          <p class="mr-[150px] opacity-80">Powered by</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script files -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
